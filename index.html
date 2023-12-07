@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="game-container_panel">
+            <div class="panel-timer">01:00</div>
+            <div class="panel-buttons">
+                <button class="btn" data-btn="start">Start game!</button>
+                <button class="btn disabled" data-btn="check" disabled>Check result</button>
+                <button class="btn" data-btn="new">New game</button>
+            </div>
+        </div>
+        <div class="game-container_displays">
+            <div class="displays-puzzle" data-sort="sort">                
+            </div>
+            <div class="displays-solution" data-sort="sort">               
+            </div>
+        </div>
+    </div>
+    <div class="modal-window hidden">
+        <div class="modal-window_messages">
+            <h3 class="messages-title">You still have time, you sure?</h3><span class="messages-timer">00:25</span>
+        </div>
+        <div class="modal-window_buttons">
+            <button class="btn" data-btn="modal-close">Close</button>
+            <button class="btn" data-btn="modal-check">Check</button>
+        </div>
+    </div>
+
+    <div class="bg hidden"></div>
+    
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
